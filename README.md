@@ -206,6 +206,20 @@ GET /api/weather/stats?station_id=USC00257715&year=2023&page=1&limit=100
 }
 ```
 
+### API Documentation
+
+Interactive Swagger UI documentation is available at:
+
+```bash
+GET /api/docs
+```
+
+OpenAPI 3.0 specification (JSON):
+
+```bash
+GET /api/docs/openapi.json
+```
+
 ### Health Check
 
 ```bash

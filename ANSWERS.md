@@ -153,9 +153,19 @@ Query calculated statistics with filtering and pagination.
 }
 ```
 
+### API Documentation (Swagger/OpenAPI)
+
+**Interactive Swagger UI**: http://localhost:8080/api/docs
+
+**OpenAPI 3.0 Specification (JSON)**: http://localhost:8080/api/docs/openapi.json
+
+The API includes a fully-featured Swagger UI with interactive documentation for all endpoints, request/response schemas, and example requests.
+
 ### Additional Endpoints:
 - `GET /health` - Health check
 - `GET /metrics` - Prometheus metrics
+- `GET /api/docs` - Interactive Swagger UI documentation
+- `GET /api/docs/openapi.json` - OpenAPI 3.0 specification
 
 **Running the API**:
 ```bash

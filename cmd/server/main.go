@@ -90,6 +90,10 @@ func main() {
 	// Register routes
 	weatherHandler.RegisterRoutes(router)
 
+	// API Documentation endpoints
+	router.HandleFunc("/api/docs", handlers.SwaggerUI).Methods("GET")
+	router.HandleFunc("/api/docs/openapi.json", handlers.OpenAPISpec).Methods("GET")
+
 	// Prometheus metrics endpoint
 	router.Handle("/metrics", promhttp.Handler())
 
